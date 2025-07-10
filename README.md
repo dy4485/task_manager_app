@@ -1,8 +1,10 @@
 📝 Task Manager App
+-------------------------------------------------
 
 A full-stack Task Management application built using Spring Boot (Backend) and React (Frontend) with JWT-based Authentication. Users can register, log in, and manage their tasks (Create, Read, Update, Delete). Authenticated users can access only their own tasks.
 
 🚀 Features
+-------------------------------------------------
 
 ✅ User Signup & Login with JWT Authentication
 
@@ -25,8 +27,10 @@ A full-stack Task Management application built using Spring Boot (Backend) and R
 ✅ Toast messages for login/signup feedback
 
 🏗️ Project Structure
+-------------------------------------------------
 
 📆 Backend - Spring Boot
+-------------------------------------------------
 
 ```
 src/
@@ -50,6 +54,7 @@ src/
 ```
 
 🌐 Frontend - React
+-------------------------------------------------
 ```
 src/
 ├── pages/
@@ -68,6 +73,7 @@ src/
 🛠️ Technologies Used
 
 ###Backend:
+-------------------------------------------------
 
 • Spring Boot
 
@@ -80,6 +86,7 @@ src/
 • Maven
 
 ###Frontend:
+-------------------------------------------------
 
 • React.js
 
@@ -93,6 +100,7 @@ src/
 
 
 ✅ Setup Instructions
+-------------------------------------------------
 
 🔹 1. Clone the repository
 ```
@@ -100,6 +108,7 @@ git clone https://github.com/your-username/task-manager-app.git
 cd task-manager-app
 ```
 🔧 Backend Setup (Spring Boot)
+-------------------------------------------------
 
 🔸 Prerequisites
 
@@ -129,6 +138,7 @@ mvn spring-boot:run
 The backend will run at``` http://localhost:9090```
 
 🌐 Frontend Setup (React)
+-------------------------------------------------
 
 🔸 Prerequisites
 
@@ -143,6 +153,7 @@ npm start
 React will run at http://localhost:3000
 
 📬 API Endpoints
+-------------------------------------------------
 
 | Method | Endpoint         | Description       |
 | ------ | ---------------- | ----------------- |
@@ -150,15 +161,16 @@ React will run at http://localhost:3000
 | POST   | `/auth/login`    | Login and get JWT |
 | GET    | `/tasks`              | Get user tasks    |
 | POST   | `/tasks`         | Create a task     |
-| PUT    | `/update/{id}`   | Update a task     |
-| DELETE | `/delete/{id}`   | Delete a task     |
+| PUT    | `/{id}`   | Update a task     |
+| DELETE | `/{id}`   | Delete a task     |
 
 
 
 🔐 All routes except ```/auth/*``` are JWT protected
 
-🔒 Authentication Flow
 
+🔒 Authentication Flow
+--------------------------------------------------------
 After login, token is stored in localStorage.
 
 Axios automatically sends JWT in ```Authorization: Bearer <token>``` header.
@@ -166,16 +178,25 @@ Axios automatically sends JWT in ```Authorization: Bearer <token>``` header.
 Spring Security filters requests and authenticates users.
 
 📸 Screenshots
+-------------------------------------------------
+![Home Page](assets/Screenshot_2025-07-10_113932.png)
+![signup Page](assets/Screenshot_2025-07-10_113857.png)
+![login Page](assets/Screenshot_2025-07-10_113838.png)
+![dashboard Page](assets/Screenshot_2025-07-10_113705.png)
+![dashboard Page](assets/Screenshot_2025-07-10_113805.png)
+
 
 
 
 
 
 ✍️ Author
+-------------------------------------------------
 
 Dilip Yadav
 
 📢 Connect on LinkedIn
+-------------------------------------------------
 
 Feel free to connect :🔗 (https://www.linkedin.com/in/dilip-yadav-2a0765244)
 
