@@ -63,6 +63,7 @@ src/
 │   └── Dashboard.jsx
 ├── components/
 │   ├── Navbar.jsx
+│   ├── ProtectedRoute.jsx
 │   └── TaskForm.jsx
 ├── context/
 │   └── AuthContext.js
